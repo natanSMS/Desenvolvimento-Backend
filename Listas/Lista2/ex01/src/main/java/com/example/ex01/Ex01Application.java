@@ -22,10 +22,10 @@ public class Ex01Application {
 	}
 
 	@PostMapping("/ilhas-de-calor")
-	public static String adicionarIlhaDeCalor(@RequestBody IlhaDeCalor ilhaDeCalor) {
-		ilhas.add(ilhaDeCalor);
+	public static String adicionarIlhaDeCalor(@RequestBody IlhaDeCalor ilha) {
+		ilhas.add(ilha);
 
-		return "Ilha de calor " + ilhaDeCalor.getBairro() + " adicionada com sucesso!";
+		return "Ilha de calor " + ilha.getBairro() + " adicionada com sucesso!";
 	}
 
 	@GetMapping("/ilhas-de-calor")
